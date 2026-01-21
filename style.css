@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Norse;
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  width: 40%;
+  background: url("./images/bg.jpg") center/cover;
+  position: relative;
+}
+
+.logo-box {
+  margin-top: 140px;
+  background: rgba(0,0,0,.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.logo-box h1 {
+  font-family: Norse;
+  color: white;
+  font-size: 64px;
+}
+
+.logo-box img {
+  height: 80px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.right {
+  width: 60%;
+  padding: 60px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  font-size: 12px;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button {
+  margin-top: 20px;
+  background: #596d48;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+}
+
